@@ -44,6 +44,7 @@ The server object is passed as a json-encoded message body. Here’s an example:
 ```
 
 ![GitHub site_show_all](src/images/site_show_all.png)
+
 4. #### Find Servers by Name/ ID :-<br />
 	 The parameter is a string. Checks if a server name contains this string and return one or more servers found. Return 404 if nothing is found.
 	 ![GitHub search_by_id](src/images/search_by_id.png)
