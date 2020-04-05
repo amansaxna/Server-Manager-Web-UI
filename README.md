@@ -1,8 +1,11 @@
-# REST API  
-### Consuming a RESTful Web Service with AJAX-Bootstraping
-A basic WEB UI frontend for an application created using   **Bootstrap** framework.Using **AJAX** methods to create, show and delete records from the UI : 
-	![GitHub site_home](src/images/site_home.png)
-* #### Show All servers :-
+# Server-Manager-Web-UI  
+### Consuming a RESTful Web Service with AJAX and Bootstrap
+A basic WEB UI frontend created using **Bootstrap** framework. Used **AJAX** methods to communicate with the Rest service from the UI : 
+	![GitHub docker_index](src/images/docker_index.png)
+
+### Basic Functionalities :-
+
+1. #### Show All servers :-
 	 Displays all the servers if no parameters are passed.When server id is passed as a parameter - return a single server or 404 if there’s no such a server.
  ```javascript
 		        var xhttp = new XMLHttpRequest();
@@ -12,7 +15,7 @@ A basic WEB UI frontend for an application created using   **Bootstrap** framewo
 			xhttp.send();
 ```
 ![GitHub site_show_all](src/images/site_show_all.png)
-* #### Insert a Server :-
+2. #### Add a Server :-
 The server object is passed as a json-encoded message body. Here’s an example:<br />
  ```javascript
 		      	var xhttp = new XMLHttpRequest(); 
@@ -32,7 +35,7 @@ The server object is passed as a json-encoded message body. Here’s an example:
 		   	“framework”:”django” 
 		}
 ```
-* #### Delete Server:-<br />
+3. #### Delete Server:-<br />
 	 The parameter is a server ID. 
  ```javascript
 		       var xhttp = new XMLHttpRequest(); 
@@ -41,6 +44,6 @@ The server object is passed as a json-encoded message body. Here’s an example:
 ```
 
 ![GitHub site_show_all](src/images/site_show_all.png)
-* #### Find Servers by Name/ ID :-<br />
+4. #### Find Servers by Name/ ID :-<br />
 	 The parameter is a string. Checks if a server name contains this string and return one or more servers found. Return 404 if nothing is found.
 	 ![GitHub search_by_id](src/images/search_by_id.png)
